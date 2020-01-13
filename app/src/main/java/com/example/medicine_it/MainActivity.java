@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 SearchTab.setVisibility(View.GONE);
                 RecomTab.setVisibility(View.VISIBLE);
+                godb();
+
             }
         });
         Rgo.setOnClickListener(new Button.OnClickListener() {
@@ -60,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         String message2 = mediR2.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         intent.putExtra(EXTRA_MESSAGE2, message2);
+        startActivity(intent);
+    }
+    public void godb() {
+        Intent intent = new Intent(this, dbTest.class);
         startActivity(intent);
     }
 }
