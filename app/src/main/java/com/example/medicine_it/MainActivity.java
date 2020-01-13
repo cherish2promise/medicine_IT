@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-
+ //test
     public static final String EXTRA_MESSAGE = "찾고자 하는 약 정보";
     public static final String EXTRA_MESSAGE2 = "찾고자 하는 약 정보2";
 
